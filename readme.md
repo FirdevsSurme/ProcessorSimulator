@@ -1,6 +1,6 @@
-** Pipeline Hazard Handling
+# Pipeline Hazard Handling
 
-* Implemented Hazard Types:
+## Implemented Hazard Types:
 
 Data Hazards (RAW): Detected and resolved using forwarding.
 
@@ -9,21 +9,21 @@ Load-Use Hazard: Pipeline stalling is used to resolve these hazards.
 Control Hazards: Simple branch prediction and flushing are implemented.
 
 
-** Forwarding Mechanism:
+# Forwarding Mechanism:
 
 Forwarding from EX/MEM and MEM/WB stages to avoid data hazards.
 
 Implements bypass logic for register values in dependent instructions.
 
 
-** Stalling:
+# Stalling:
 
 Load-use dependencies cause the pipeline to stall for one cycle.
 
 Control hazards trigger pipeline flush and PC correction.
 
 
-** Example Test Cases (SystemVerilog)
+# Example Test Cases (SystemVerilog)
 
 The testbench includes multiple scenarios:
 
